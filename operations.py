@@ -4,7 +4,7 @@ import getpass
 
 def do_operation(option_typed, account_auth):
     if option_typed == '1':
-        show_balance()
+        show_balance(account_auth)
     elif option_typed == '10' and bank_account_variables.accounts_list[account_auth]['admin']:
         insert_money_slips()
     if option_typed == '2':
